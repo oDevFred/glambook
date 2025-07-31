@@ -25,3 +25,9 @@ Execute os testes com: `npm test`
 1. Construa a imagem Docker: `docker build -t glambook:latest .`
 2. Execute o container: `docker run -p 3000:3000 --env-file .env glambook:latest`
 3. Acesse `http://localhost:3000/health` para verificar o servidor.
+
+## Docker Compose
+1. Inicie os serviços: `docker-compose up --build`
+2. Acesse `http://localhost:3000/health` para verificar o servidor.
+3. Teste a conexão com o banco: `node src/db.test.js` (após compilar com `npm run build`).
+4. Pare os serviços: `docker-compose down`
