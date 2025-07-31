@@ -5,7 +5,7 @@ const config: Config = {
     testEnvironment: 'node',
     testMatch: ['**/tests/**/*.test.ts'],
     coverageDirectory: 'coverage',
-    collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+    collectCoverageFrom: ['src/**/*.{ts,tsx}', 'tests/**/*.{ts,tsx}'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
 };
 
